@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6928cb3cc4aad524386d36a2d87d5f9d, type: 3}
+  m_Name: AsteroidsConfiguration
+  m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 21300000, guid: f533e2f27bdb82145b4a9d645a52b14a, type: 3}
+  - {fileID: 21300000, guid: 5976b7ad4e89f6a4fa29df6536be120a, type: 3}
+  - {fileID: 21300000, guid: fb521d31f2a8c40459954eccef4239cb, type: 3}
+  _asteroidPrefab: {fileID: 888221813865976242, guid: 8207f8f1c1405594cb9f7aee4b7b03a8,
+    type: 3}
+  _levels:
+  - Level: 1
+    Size: 0.5
+    MovimentSpeed: 1700
+    RotationSpeed: 800
+    Points: 20000
+  - Level: 2
+    Size: 1
+    MovimentSpeed: 1500
+    RotationSpeed: 1000
+    Points: 12000
+  - Level: 3
+    Size: 1.5
+    MovimentSpeed: 2000
+    RotationSpeed: 1500
+    Points: 6000
+  _rangeMovimentAndPosition: 3
+  _firstWave: 3
+  _increaseWave: 5
+  _asteroidsPool: AsteroidsPool
