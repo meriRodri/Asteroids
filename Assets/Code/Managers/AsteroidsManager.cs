@@ -121,5 +121,10 @@ namespace Code.Managers
             yield return new WaitForSeconds(General.TimeBetweenWaves);
             InstantiateAsteroidsWaves(_configuration.FirstWave + _configuration.IncreaseWave * _counter);
         }
+
+        private void OnDisable()
+        {
+            StopCoroutine(nameof(NewWave));
+        }
     }
 }

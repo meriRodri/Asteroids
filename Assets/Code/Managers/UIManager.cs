@@ -83,5 +83,10 @@ namespace Code.Managers
             SetScore(0);
             _scoreText.gameObject.SetActive(true);
         }
+
+        private void OnDisable()
+        {
+            StopCoroutine(nameof(HideText));
+        }
     }
 }

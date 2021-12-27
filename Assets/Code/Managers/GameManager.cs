@@ -34,6 +34,7 @@ namespace Code.Managers
             _player.OnShoot -= ShootBullet;
             _asteroidsManager.OnNewAsteroidsWave -= SetNewWave;
             _asteroidsManager.OnSetScore -= SetScore;
+            StopCoroutine(nameof(RestartPlayer));
         }
 
         private void Update()

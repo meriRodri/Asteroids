@@ -27,6 +27,7 @@ namespace Code.Objects
         private void OnTriggerEnter2D(Collider2D collision)
         {
             gameObject.SetActive(false);
+            StopCoroutine(nameof(DestroyBullet));
         }
     }
 }
